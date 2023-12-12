@@ -30,6 +30,10 @@ def nextpage():
 def fakesns_page():
     return render_template("fake-sns.html")
 
+@app.route("/fake-mail.html", methods=["GET"])
+def fakemail_page():
+    return render_template("fake-mail.html")
+
 
 
 
