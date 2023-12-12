@@ -1,6 +1,7 @@
 from flask import Flask,render_template
 
 app = Flask(__name__, static_folder='./image')
+app = Flask(__name__, static_folder="./image/")
 
 
 
@@ -33,6 +34,14 @@ def fakesns_page():
 @app.route("/fake-mail.html", methods=["GET"])
 def fakemail_page():
     return render_template("fake-mail.html")
+
+@app.route("/new_account.html", methods=["GET"])
+def newaccount_page():
+    return render_template("new_account.html")
+
+@app.route("/product_d.html", methods=["GET"])
+def productd_page():
+    return render_template("product_d.html")
 
 
 
