@@ -17,12 +17,12 @@ def hello():
 #    return render_template("index.html")
 
 #「/templates」へアクセスがあった場合に、index.htmlを返す
-@app.route("/templates", methods=["GET"])
+@app.route("/index.html", methods=["GET"])
 def index():
     return render_template("index.html")
 
 #「/nextpage」へアクセスがあった場合に、next_index.htmlを返す
-@app.route("/nextpage", methods=["GET"])
+@app.route("/menu.html", methods=["GET"])
 def nextpage():
     return render_template("menu.html")
 
