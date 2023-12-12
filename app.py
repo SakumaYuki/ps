@@ -18,14 +18,13 @@ def hello():
 def index():
     return render_template("index.html")
 
-@app.route("/index")
-def index():
-    return render_template("menu.html")
-
-@app.route("/index/menu")
+@app.route("/menu")
 def menu():
     return render_template("menu.html")
 
+@app.route("/index/fake-sns")
+def fakesns():
+    return render_template("fake-sns.html")
 
 
 
