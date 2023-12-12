@@ -1,8 +1,8 @@
 from flask import Flask,render_template
 
 app = Flask(__name__, static_folder='./templates/image')
-app = Flask(__name__, static_folder='/templates/images') 
-app = Flask(__name__, static_folder='templates/images') 
+app = Flask(__name__, static_folder='/templates/image') 
+app = Flask(__name__, static_folder='templates/image') 
 
 
 
@@ -14,17 +14,19 @@ def hello():
     return "Hello World"
 
 #「/templates」へアクセスがあった場合に、index.htmlを返す
-@app.route("/index")
+#@app.route("/index")
+#def index():
+#    return render_template("index.html")
+
+#「/index」へアクセスがあった場合に、index.htmlを返す
+@app.route("/index", methods=["GET"])
 def index():
     return render_template("index.html")
 
-@app.route("/menu")
+#「/nextpage」へアクセスがあった場合に、next_index.htmlを返す
+@app.route("/menu", methods=["GET"])
 def menu():
     return render_template("menu.html")
-
-@app.route("/index/fake-sns")
-def fakesns():
-    return render_template("fake-sns.html")
 
 
 
