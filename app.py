@@ -26,6 +26,10 @@ def index():
 def nextpage():
     return render_template("menu.html")
 
+@app.route("/fake-sns", methods=["GET"])
+def nextpage():
+    return render_template("fake-sns.html")
+
 
 
 
