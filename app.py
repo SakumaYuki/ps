@@ -18,7 +18,7 @@ def index():
 def menu_page():
   return render_template('menu.html')
 
-@app.route('/another_page')
+@app.route("/index/fake-sns")
 def another_page():
   return render_template('fake-sns.html')
 
