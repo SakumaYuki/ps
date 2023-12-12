@@ -1,6 +1,10 @@
 from flask import Flask,render_template
 
 app = Flask(__name__, static_folder='./templates/image')
+app = Flask(__name__, static_folder='/templates/images') 
+app = Flask(__name__, static_folder='templates/images') 
+
+
 
 app = Flask(__name__)
 
@@ -14,13 +18,10 @@ def hello():
 def index():
     return render_template("index.html")
 
-@app.route('/index/menu')
-def menu_page():
-  return render_template('menu.html')
+@app.route("/index")
+def index():
+    return render_template("index.html")
 
-@app.route("/index/fake-sns")
-def another_page():
-  return render_template('fake-sns.html')
 
 
 
