@@ -1,8 +1,6 @@
-from flask import Flask,render_templates
+from flask import Flask,render_template
 
 app = Flask(__name__, static_folder='./templates/image')
-app = Flask(__name__, static_folder='/templates/image') 
-app = Flask(__name__, static_folder='templates/image') 
 
 
 
@@ -18,15 +16,15 @@ def hello():
 #def index():
 #    return render_template("index.html")
 
-#「/index」へアクセスがあった場合に、index.htmlを返す
-@app.route("/index", methods=["GET"])
+#「/templates」へアクセスがあった場合に、index.htmlを返す
+@app.route("/templates", methods=["GET"])
 def index():
-    return render_templates("index.html")
+    return render_template("index.html")
 
 #「/nextpage」へアクセスがあった場合に、next_index.htmlを返す
-@app.route("/menu", methods=["GET"])
-def menu():
-    return render_templates("menu.html")
+@app.route("/nextpage", methods=["GET"])
+def nextpage():
+    return render_template("menu.html")
 
 
 
