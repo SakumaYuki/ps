@@ -1,13 +1,9 @@
 from flask import Flask,render_template
 
-app = Flask(__name__, static_folder='./image')
-app = Flask(__name__, static_folder="./image/")
-app = Flask(__name__, static_folder='./templates/images')
-
-
-
 
 app = Flask(__name__)
+app = Flask(__name__, static_folder='/template/images') 
+app = Flask(__name__, static_folder='./template/images')
 
 #「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
