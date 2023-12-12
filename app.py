@@ -14,7 +14,7 @@ def hello():
 def index():
     return render_template("index.html")
 
-@app.route('/menu')
+@app.route('/index/menu')
 def menu_page():
   return render_template('menu.html')
 
