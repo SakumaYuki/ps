@@ -2,6 +2,7 @@ from flask import Flask,render_template
 
 app = Flask(__name__, static_folder='./image')
 app = Flask(__name__, static_folder="./image/")
+app = Flask(__name__, static_folder='./templates/images')
 
 
 
