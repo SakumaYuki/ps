@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+
+<html lang="ja">
+
+<style>
+  header {
+    background-color: lightblue;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center
+  }
+
+  footer {
+    background-color: lightblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+  }
+
+  .slider {
+    width: 1000px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+
+  }
+
+  .slider-item {
+    width: 1000px;
+    float: left;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .slider-inner {
+    width: 300%;
+    animation: slider 10s infinite ease;
+  }
+
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+
+    33% {
+      transform: translateX(-300px);
+    }
+
+    66% {
+      transform: translateX(-600px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+</style>
+
+<head>
+  <meta cherset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Document</title>
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <a class="link-opacity-50 text-decoration-none" href="index.html">
+          <p size="20px" style="color: white;">Project.SAKAI</p>
+        </a>
+      </div>
+      <div class="col">
+        <a class="link-opacity-50 text-decoration-none" href="new_account.html">
+          <img src="image/icon.png" style="width: 50px; height: 50px; margin-left: 30px;">
+        </a>
+      </div>
+    </div>
+  </header>
+  <p><a class="link-opacity-50" href="index.html">戻る</a></p>
+
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/AC_SX679.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/gandamu.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/harapeko.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">前へ</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">次へ</span>
+    </button>
+  </div>
+
+  <p>
+  <div class=" d-flex  justify-content-center">
+    <div class="card" style="width: 80%;">
+      <img src="image/AC_SX679.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">PlayStation Portal</h5>
+        <p class="card-text">PlayStation Portal リモートプレーヤーを使えば、ご自宅のWi-Fi経由で、テレビを使用することなく、あなたのPS5にあるゲームにアクセスできます。</p>
+        <a href="#" class="btn btn-primary">詳細</a>
+      </div>
+    </div>
+  </div>
+  </p>
+
+  <p>
+  <div class=" d-flex  justify-content-center">
+    <div class="card" style="width: 80%;">
+      <a href="product_d.html"><img src="image/gandamu.png" alt="" class="card-img-top"></a>
+      <div class="card-body">
+        <h5 class="card-title">ガンダム</h5>
+        <p class="card-text">機動戦士ガンダムシリーズ　プラモデル</p>
+        <a href="product_d.html" class="btn btn-primary">詳細</a>
+      </div>
+    </div>
+  </div>
+  </p>
+
+  <p>
+  <div class=" d-flex  justify-content-center">
+    <div class="card" style="width: 80%;">
+      <img src="image/harapeko.png" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">はらぺこあおむし</h5>
+        <p class="card-text">小さなあおむしは、もりもりと食べつづけて美しい蝶になった。数や曜日の認識をおりこみ、穴あきのしかけをこらした斬新な絵本。</p>
+        <a href="#" class="btn btn-primary">詳細</a>
+      </div>
+    </div>
+  </div>
+  </p>
+
+  <footer>
+    <p>© All rights reserved by dmmwebcampmedia.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
