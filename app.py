@@ -1,8 +1,8 @@
 from flask import Flask,render_template
 
-
 app = Flask(__name__)
 app = Flask(__name__, static_folder='/template/image') 
+app = Flask(__name__, static_folder='./template/image')
 
 #「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
