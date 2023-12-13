@@ -40,6 +40,16 @@ def newaccount_page():
 def productd_page():
     return render_template("product_d.html")
 
+@app.route("/eventlist.html", methods=["GET"])
+def eventlist_page():
+    return render_template("eventlist.html")
+
+@app.route("/eventdetail.html", methods=["GET"])
+def eventdetail_page():
+    return render_template("eventdetail.html")
+
+
+
 
 #app.pyをターミナルから直接呼び出した時だけ、app.run()を実行する
 if __name__ == "__main__":
