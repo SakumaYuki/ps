@@ -3,7 +3,6 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 app = Flask(__name__, static_folder='/template/image') 
-app = Flask(__name__, static_folder='./template/image')
 
 #「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
@@ -40,12 +39,6 @@ def newaccount_page():
 @app.route("/product_d.html", methods=["GET"])
 def productd_page():
     return render_template("product_d.html")
-
-
-
-
-
-
 
 
 #app.pyをターミナルから直接呼び出した時だけ、app.run()を実行する
