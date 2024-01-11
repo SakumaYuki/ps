@@ -48,6 +48,13 @@ def eventlist_page():
 def eventdetail_page():
     return render_template("eventdetail.html")
 
+@app.route("/product_d2.html", methods=["GET"])
+def product_d2_page():
+    return render_template("product_d2.html")
+
+@app.route("/product_d3.html", methods=["GET"])
+def product_d3_page():
+    return render_template("product_d3.html")
 
 
 
